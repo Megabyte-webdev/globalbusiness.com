@@ -1,0 +1,138 @@
+#footer {
+    width: 100%;
+    height: max-content;
+    background: var(--secondary-green);
+    padding: 20px 0;
+    font-weight: 500;
+    margin-top: var(--top);
+}
+footer > div{
+    width: 95%;
+    max-width: var(--primary-width);
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1em;
+    margin: 0 auto;
+    transition: all .6s ease;
+    border-bottom: 3px solid var(--white);
+    color: var(--white);
+    padding-bottom: 10px;
+}
+.foot-note{
+    border: none;
+}
+.foot-note small{
+    margin: 10px;
+}
+.foot-note small:first-child{
+    margin-right: auto;
+}
+.footer-desc p {
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 5px;
+    max-width: 80%;
+}
+#footer .col{
+    width: 100%;
+    max-width: 200px;
+    margin: 1em auto;
+    height: 250px;
+    padding: 5px;
+   
+}
+#footer .col:first-child{
+    flex-grow: 1;
+    max-width: 300px;
+}
+.footer-desc {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col h1 {
+    font-size: 1.3em;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    text-align: left;
+}
+
+.contact span {
+    
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin:5px;
+}
+.contact span i{
+    font-weight: 800;
+    color: transparent;
+    margin-right: 2px;
+    font-style: normal;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--white);
+}
+.contact span:hover {
+
+    background: olive;
+}
+
+
+.col h2 {
+    font-size: 1.1em;
+    text-align: left;
+    margin: 1em 0 0 0;
+
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+.col > a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.col p,
+.col > a {
+    font-size: 1em;
+    text-align: left;
+    margin: 1rem 0;
+    color: inherit;
+    
+    align-self: flex-start;
+}
+.col > a:hover,
+.col > a:active {
+    color: wheat;
+}
+
+#footer .download h2 {
+    font-size: .8em;
+    text-align: center;
+    color: var(--white);
+    text-shadow: 0 0 transparent;
+}
+#footer .app {
+    height: 45px;
+}
+
+@media screen and (max-width: 698px) {
+	#footer .col{
+		align-self: center;
+		height: max-content;
+		max-height: 200px;
+	}
+	#footer .col:not(:first-child){
+		flex-grow: 1;
+		max-width: max-content;
+		
+		width:50%;
+	}
+}
